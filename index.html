@@ -8,6 +8,7 @@
   <link rel="icon" href="https://bcw.blob.core.windows.net/public/img/9977764104160066">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
   <link rel="stylesheet" href="assets/style/main.css">
   <link rel="stylesheet" href="assets/style/style.css">
   <title>Get-Booked</title>
@@ -15,22 +16,84 @@
 
 <body>
   <header>
-    <nav class="navbar navbar-dark navbar-expand bg-dark text-light no-select">
-      <a class="navbar-brand ms-3" href="#">
-        <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
-          loading="lazy">
-        <span class="ms-2">Get-Booked</span>
-      </a>
+    <nav class="navbar navbar-dark navbar-expand d-flex text-light no-select">
+      <a class="navbar-brand ms-3" href="#"></a>
+      <img src="https://codeworks.blob.core.windows.net/public/assets/img/cw-mark.png" height="45" alt=""
+        loading="lazy">
+      <h1 class="ms-2">Get-Booked</h1>
+      <form id="add-trip" class="ms-3" onsubmit="app.tripsController.addTrip()">
+        <input required type="text" name="title" id="title" minLength="3" maxLength="15" placeholder="Book Now...">
+        <button class="rounded bg-primary border-0 ms-3">Add New
+          Trip</button>
+      </form>
     </nav>
   </header>
-  <main>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+  <main id="trip-template" class="container-fluid bg-dark">
+    <!-- <div class="row card p-3 m-3" id="trip-template">
+
+
+
+      
+       <div class="col-12 d-flex justify-content-between border-bottom border-dark">
+        <h3>Type</h3>
+        <h3>Name</h3>
+        <h3>Confirmation Number</h3>
+        <h3>Address</h3>
+        <h3>Date</h3>
+        <h3>Cost</h3>
+      </div>
+      <div class="col-12">
+        <div class="row justify-content-between">
+          <p class="col-2 mt-3">hello</p>
+          <p class="col-2 mt-3">hello</p>
+          <p class="col-2 mt-3 m-0 text-center ">hello</p>
+          <p class="col-2 mt-3 text-end">hello</p>
+          <p class="col-2 mt-3 text-end">hello</p>
+          <p class="col-2 mt-3 text-end">hello</p>
         </div>
       </div>
+      
+      <div class="col-12">
+        <form class="row border-top border-dark mt-3 justify-content-between">
+          <div class="col-1 m-3">
+            <select class="rounded" name="type" id="type">
+              <option value="Flight">Flight</option>
+              <option value="Attraction">Attraction</option>
+              <option value="Vehicle">Vehicle</option>
+              <option value="Hotel">Hotel</option>
+            </select>
+          </div>
+          <div class="col-2  m-3">
+            <label for=""></label>
+            <input class="col-6 rounded" type="text" placeholder="Name..">
+          </div>
+          <div class="col-2 m-3 ps-0">
+            <label for=""></label>
+            <input class="col-10 rounded " type="text" placeholder="Confirmation Number..">
+          </div>
+          <div class=" col-2 text-center m-3">
+            <label for=""></label>
+            <input class="col-8 rounded" type="text" placeholder="Address..">
+          </div>
+          <div class=" col-2 text-center m-3">
+            <label for=""></label>
+            <input class="rounded" type="date" placeholder="Date..">
+          </div>
+          <div class="col-1 text-end m-3">
+            <label for=""></label>
+            <input class="col-8 rounded" type="number" placeholder="Cost..">
+          </div>
+          <div class="text-end">
+            <button class="rounded shadow bg-primary" type="submit">Submit</button>
+          </div>
+        </form> 
+
+
     </div>
+ -->
+
+
+
   </main>
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
