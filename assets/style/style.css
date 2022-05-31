@@ -4,3 +4,14 @@ nav {
     background-color: green;
 
 }
+
+main {
+
+    background-image: url(https://scontent-sea1-1.xx.fbcdn.net/v/t31.18172-8/23213298_128755171176807_7649637594963973686_o.jpg?stp=dst-jpg_p417x417&_nc_cat=104&ccb=1-7&_nc_sid=e3f864&_nc_ohc=2ulyWSJbXwoAX-DYqXH&_nc_oc=AQmZf8kLmDAxlsYXQ1z6VY6LmjHMKR0Zbt9_d4iw4T7rRRjgUamTG4cdDrUTMo5jxt37hh8b1WCxsBEUV_QaNr5K&_nc_ht=scontent-sea1-1.xx&oh=00_AT8cNLgyC7G6fKvfYMwKYE3r_NWLWWtK8wr4buXYYahEhg&oe=62BB8877);
+
+    background-position: center;
+    background-repeat: no-repeat no-repeat;
+    background-size: 210vh;
+
+
+}

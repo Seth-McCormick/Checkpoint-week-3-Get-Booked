@@ -8,14 +8,14 @@ function _drawTrip() {
     let trips = ProxyState.trips
     let template = ''
     trips.forEach(t => template += t.Template)
-    console.log('hello', trips, reservations);
+    // console.log('hello', trips, reservations);
     document.getElementById('trip-template').innerHTML = template
 
 }
 
 export class TripsController {
     constructor() {
-        console.log('add a trip');
+        // console.log('add a trip');
         ProxyState.on('trips', _drawTrip)
         ProxyState.on('reservations', _drawTrip)
         ProxyState.on('trips', saveFile)
@@ -28,12 +28,12 @@ export class TripsController {
     addTrip() {
 
         window.event.preventDefault()
-        console.log('booking a trip');
+        // console.log('booking a trip');
         let form = window.event.target
         let tripData = {
             title: form.title.value
         }
-        console.log('trip added', tripData);
+        // console.log('trip added', tripData);
         tripsService.addTrip(tripData)
 
     }
@@ -41,7 +41,7 @@ export class TripsController {
 
     newNote(id) {
         let textarea = window.event.target
-        console.log(textarea.value, id);
+        // console.log(textarea.value, id);
         tripsService.newNote(textarea.value, id)
 
 

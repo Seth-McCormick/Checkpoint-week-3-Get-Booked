@@ -10,7 +10,7 @@ class ReservationsService {
     }
 
     deleteReservation(id) {
-        console.log('deleting item', id);
+        // console.log('deleting item', id);
         ProxyState.reservations = ProxyState.reservations.filter(res => res.id != id)
 
 

@@ -3,7 +3,7 @@ import { Reservation } from "../Models/Reservation.js";
 import { Trip } from "../Models/Trip.js";
 
 export function saveFile() {
-    console.log('saving');
+    // console.log('saving');
     let data = {
         trips: ProxyState.trips,
         reservations: ProxyState.reservations
@@ -12,7 +12,7 @@ export function saveFile() {
 }
 
 export function loadFile() {
-    console.log('loading');
+    // console.log('loading');
     let data = window.localStorage.getItem('Get-Booked')
     if (data) {
         let obj = JSON.parse(data)

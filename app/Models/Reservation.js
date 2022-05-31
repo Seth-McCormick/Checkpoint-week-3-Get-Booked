@@ -26,7 +26,7 @@ export class Reservation {
               <p class="col-2 mt-3 m-0 text-center ">h${this.confirmationNumber}</p>
               <p class="col-2 mt-3 text-end">${this.address}</p>
               <p class="col-2 mt-3 text-end">${this.date.toDateString()}</p>
-              <p class="col-2 mt-3 text-end">${this.cost}</p>
+              <p class="col-2 mt-3 text-end">$${this.cost}</p>
               
             </div>
           </div>

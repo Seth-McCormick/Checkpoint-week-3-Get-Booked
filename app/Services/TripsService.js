@@ -4,7 +4,7 @@ import { Trip } from "../Models/Trip.js"
 class TripsService {
 
     addTrip(tripData) {
-        console.log('bring it');
+        // console.log('bring it');
         ProxyState.trips = [...ProxyState.trips, new Trip(tripData)]
         ProxyState.trips = ProxyState.trips
     }
@@ -17,7 +17,7 @@ class TripsService {
     }
 
     deleteTrip(id) {
-        console.log(id);
+        // console.log(id);
         ProxyState.trips = ProxyState.trips.filter(t => t.id != id)
     }
 }
